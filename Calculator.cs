@@ -46,32 +46,55 @@ public class CCalculator
 
     public string Add ( int a, int b )
     {
-        int output = a + b ;
-        return ( a.ToString() + " + " + b.ToString() + " = " + output.ToString()) ;
+        Result = a + b ;
+        return ( a.ToString() + " + " + b.ToString() + " = " + Result.ToString()) ;
     }
 
     public string Subtract ( int a, int b )
     {
-        int output = a - b ;
-        return ( a.ToString() + " - " + b.ToString() + " = " + output.ToString()) ;
+        Result = a - b ;
+        return ( a.ToString() + " - " + b.ToString() + " = " + Result.ToString()) ;
     }
 
     public string Multiply ( int a, int b )
     {
-        int output = a * b ;
-        return ( a.ToString() + " * " + b.ToString() + " = " + output.ToString()) ;
+        Result = a * b ;
+        return ( a.ToString() + " * " + b.ToString() + " = " + Result.ToString()) ;
     }
 
     public string Divide ( int a, int b )
     {
-        int output = a - b ;
+        Result = a - b ;
         if (b == 0)
         {
             return "Denominator cannot be zero";
         }
         else
         {
-            return ( a.ToString() + " / " + b.ToString() + " = " + output.ToString()) ;
+            return ( a.ToString() + " / " + b.ToString() + " = " + Result.ToString()) ;
         }
+    }
+
+    public int calculate ( int a, int b, Operations operations)
+    {
+        switch (operations)
+        {
+            case Operations.Add:
+            Add(a,b);
+            break;
+
+            case Operations.Subtract:
+            Add(a,b);
+            break;
+
+            case Operations.Multiply:
+            Add(a,b);
+            break;
+
+            case Operations.Divide:
+            Add(a,b);
+            break;
+        }
+        return Result;
     }
 }

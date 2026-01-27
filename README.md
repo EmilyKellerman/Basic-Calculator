@@ -1,2 +1,2 @@
-# Basic-Calculator
-A test on basic c# knowledge
+# CalculatorDomainDemo
+We are creating a calculator to demonstrate C# as a domain language

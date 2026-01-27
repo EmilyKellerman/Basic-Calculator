@@ -1,100 +1,79 @@
-using System.Xml;
+namespace CalculatorDomainDemo;
 
-public class CCalculator
+/// <summary>
+/// This class represents the DOMAIN BEHAVIOUR.
+/// 
+/// In real systems:
+/// - This is where rules live
+/// - This is where decisions are made
+/// 
+/// In the booking system, this is similar to:
+/// - Booking management logic
+/// </summary>
+public class Calculator
 {
-    //Properties
-    public int Result { get; set; }
+    /// <summary>
+    /// This property stores state INSIDE the object.
+    /// 
+    /// Notice:
+    /// - Public getter
+    /// - Private setter
+    /// 
+    /// This means:
+    /// - Other code can read the value
+    /// - Only the Calculator can change it
+    /// 
+    /// This protects the object from invalid changes.
+    /// </summary>
+    public int LastResult { get; private set; }
 
-    //Enums
-    public enum Operations
+    /// <summary>
+    /// Every calculator must have a name.
+    /// 
+    /// Constructors define what MUST exist
+    /// for an object to be valid.
+    /// </summary>
+    public string Name { get; }
+
+    public Calculator(string name)
     {
-        Add, Subtract, Multiply, Divide
+        // Guard clause:
+        // We do NOT allow invalid objects to exist.
+        if (string.IsNullOrWhiteSpace(name))
+            throw new ArgumentException("Calculator must have a name");
+
+        Name = name;
     }
 
-    //Fields
-    private string sName;
-
-    public string Name
+    /// <summary>
+    /// This method applies business rules.
+    /// 
+    /// It does NOT:
+    /// - Read from the console
+    /// - Print output
+    /// 
+    /// This separation is important because:
+    /// - Console apps are temporary
+    /// - Business logic must survive
+    /// 
+    /// In the booking system:
+    /// - This would decide if a booking is allowed
+    /// - This would enforce capacity rules
+    /// </summary>
+    public int Calculate(int a, int b, OperationType operation)
     {
-        get
+        // Switch expression ensures ALL enum cases are handled
+        LastResult = operation switch
         {
-            if ( string.IsNullOrWhiteSpace(sName))
-            {
-                Name = "Default Calculator";
-            }
-            else
-            {
-                Name = sName;
-            }
-            return sName;
-        }
-        set
-        {
-            sName = value;
-        }
-    }
+            OperationType.Add => a + b,
+            OperationType.Subtract => a - b,
+            OperationType.Multiply => a * b,
+            OperationType.Divide => a / b,
 
-    public CCalculator()
-    {
-        Name = "default calculator";
-    }//default ctor
+            // This should never happen if enums are used correctly
+            _ => throw new InvalidOperationException("Invalid operation")
+        };
 
-    public CCalculator ( string Name )
-    {
-        this.Name = Name;
-    }//ctor
-
-    public string Add ( int a, int b )
-    {
-        Result = a + b ;
-        return ( a.ToString() + " + " + b.ToString() + " = " + Result.ToString()) ;
-    }
-
-    public string Subtract ( int a, int b )
-    {
-        Result = a - b ;
-        return ( a.ToString() + " - " + b.ToString() + " = " + Result.ToString()) ;
-    }
-
-    public string Multiply ( int a, int b )
-    {
-        Result = a * b ;
-        return ( a.ToString() + " * " + b.ToString() + " = " + Result.ToString()) ;
-    }
-
-    public string Divide ( int a, int b )
-    {
-        Result = a - b ;
-        if (b == 0)
-        {
-            return "Denominator cannot be zero";
-        }
-        else
-        {
-            return ( a.ToString() + " / " + b.ToString() + " = " + Result.ToString()) ;
-        }
-    }
-
-    public int calculate ( int a, int b, Operations operations)
-    {
-        switch (operations)
-        {
-            case Operations.Add:
-            Add(a,b);
-            break;
-
-            case Operations.Subtract:
-            Add(a,b);
-            break;
-
-            case Operations.Multiply:
-            Add(a,b);
-            break;
-
-            case Operations.Divide:
-            Add(a,b);
-            break;
-        }
-        return Result;
+        return LastResult;
     }
 }

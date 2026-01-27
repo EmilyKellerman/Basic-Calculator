@@ -66,3 +66,16 @@ Console.WriteLine();
 Console.WriteLine($"Calculator: {calculator.Name}");
 Console.WriteLine($"Result: {result}");
 Console.WriteLine($"Last Result Stored: {calculator.LastResult}");
+
+//View calculation history
+foreach (CalculationRequest req in calculator.History)
+{
+    Console.WriteLine( req );//can make this easier for the user to understand
+}
+
+//To see additions
+foreach (CalculationRequest req in calculator.ReturnAdditions())
+{
+    Console.WriteLine( req );//can make this easier for the user to understand
+}
+

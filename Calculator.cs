@@ -161,4 +161,22 @@ public class Calculator
         string json = JsonSerializer.Serialize(snapshot);
         await File.WriteAllTextAsync(FilePath, json);
     }
+
+    //load history from file
+    public async Task<List<CalculationRequest>> LoadHistoryAsync(string FilePath)
+    {
+        List<string> historySnap = new List<string>();
+        if (File.Exists(FilePath))
+        {
+            
+            string json = await File.ReadAllTextAsync(FilePath);
+
+            return JsonSerializer.Deserialize<List<CalculationRequest>>(json) ?? new List<CalculationRequest>();
+        }
+        else
+        {
+            throw new FileNotFoundException ("History file not found.");
+        }
+    }
+
 }

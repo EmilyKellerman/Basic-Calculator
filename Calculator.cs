@@ -87,6 +87,21 @@ public class Calculator
         return result;
     }
 
+    // Get Calculation request
+        public CalculationRequest GetCalculationRequest()
+        {
+            
+            if (_history.Any())
+            {
+                throw new CalculationHistoryExcepion();
+            }
+            else
+            {
+                return _history.Last();
+            }
+            
+        }
+
     /*
      * ============================
      * LINQ AS QUESTIONS

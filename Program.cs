@@ -18,6 +18,17 @@ class Program
         // ---------------------------------
         var historySnapshot = calculator.GetHistory();
 
+        // Handling the GetLastCalculation exception
+        try
+        {
+            CalculationRequest req = calculator.GetCalculationRequest();
+            Console.WriteLine($"This is the last calculation perforemed: {req.A} {req.Operation} {req.B}");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
+
         Console.WriteLine("\n--- Calculation History (Snapshot) ---");
         foreach (var request in historySnapshot)
         {

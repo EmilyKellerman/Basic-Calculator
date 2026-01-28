@@ -1,9 +1,10 @@
 ﻿using System;
+using System.Threading.Tasks;
 using CalculatorDomainDemo;
 
 class Program
 {
-    static void Main()
+    static async Task Main()
     {
         Console.WriteLine("=== Calculator – End of Day 2 (Defensive Copy Version) ===");
 
@@ -47,6 +48,17 @@ class Program
         if (last != null)
         {
             Console.WriteLine($"Last calculation: {last.A} {last.Operation} {last.B}");
+        }
+
+        //using save to file
+        try
+        {
+            await calculator.SaveHistoryAsync("history.json");
+            Console.WriteLine("Calculator history saved!");
+        }
+        catch(Exception ex)
+        {
+            Console.WriteLine(ex + " Failed to save calculator history.");
         }
 
         Console.WriteLine("\n=== End ===");

@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.Json;
+using System.Threading.Tasks;
 
 namespace CalculatorDomainDemo;
 
@@ -123,6 +125,13 @@ public class Calculator
         return _history.Where(r => r.Operation == operation);
     }
 
+    //using linq to get the last multiplication that was done
+    public CalculationRequest GetLastMultiplication()
+    {
+        CalculationRequest req = _history.Last(i => i.Operation == OperationType.Multiply);//last or default then make it nullable so that null value is possible
+        return req;
+    }
+
     /*
      * ============================
      * GROUPING WITH DICTIONARY
@@ -143,5 +152,13 @@ public class Calculator
         }
 
         return grouped;
+    }
+
+    //Writing history to files
+    public async Task SaveHistoryAsync(string FilePath)
+    {
+        List<CalculationRequest> snapshot = _history.ToList();
+        string json = JsonSerializer.Serialize(snapshot);
+        await File.WriteAllTextAsync(FilePath, json);
     }
 }

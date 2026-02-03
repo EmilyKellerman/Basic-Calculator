@@ -27,10 +27,15 @@ namespace CalculatorDomain.Persistence
             if (!File.Exists(_filePath))
                 return new List<Calculation>();
 
-            var json = await File.ReadAllTextAsync(_filePath);
+            string json = await File.ReadAllTextAsync(_filePath);
 
-            return JsonSerializer.Deserialize<List<Calculation>>(json)
-                   ?? new List<Calculation>();
+            if (string.IsNullOrWhiteSpace(json))
+                return new List<Calculation>();
+
+            List<Calculation> calculations = JsonSerializer.Deserialize<List<Calculation>>(json)
+                            ?? new List<Calculation>();
+
+            return calculations;
         }
     }
 }

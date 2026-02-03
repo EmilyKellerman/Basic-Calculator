@@ -23,5 +23,12 @@ namespace API.controllers
             return Ok(calculations);
         }
         
+        [HttpPost]
+        public async Task<IActionResult> Calculate(CalculationRequest request)
+        {
+            var result = await _calculator.CalculateAsync(request);
+            return Ok(request);
+        }
+
     }
 }

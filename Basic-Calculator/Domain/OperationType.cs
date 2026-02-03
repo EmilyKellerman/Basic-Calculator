@@ -1,4 +1,4 @@
-namespace CalculatorDomainDemo;
+namespace Basic_Calculator;
 
 /// <summary>
 /// This enum represents the ONLY operations our calculator allows.

@@ -1,8 +1,8 @@
-using CalculatorDomainDemo;
-using CalculatorDomainDemo.Domain;
-using CalculatorDomainDemo.Persistence;
+using Basic_Calculator;
+using Basic_Calculator.Domain;
+using Basic_Calculator.Persistence;
 
-namespace CalculatorDomain.Logic
+namespace Basic_Calculator.Logic
 {
     public class CalculatorService
     {

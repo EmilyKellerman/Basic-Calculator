@@ -1,8 +1,8 @@
 using System.Text.Json;
-using CalculatorDomainDemo.Domain;
-using CalculatorDomainDemo.Persistence;
+using Basic_Calculator.Domain;
+using Basic_Calculator.Persistence;
 
-namespace CalculatorDomain.Persistence
+namespace Basic_Calculator.Persistence
 {
     public class FileCalculationStore : ICalculationStore
     {

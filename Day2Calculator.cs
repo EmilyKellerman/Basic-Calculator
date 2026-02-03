@@ -4,18 +4,6 @@ using System.Linq;
 
 namespace CalculatorDemo
 {
-    /*
-     * ============================
-     * ENUM: Business Rules
-     * ============================
-     * 
-     * Enums define allowed values.
-     * Invalid options are impossible.
-     * 
-     * Booking system mapping:
-     * - BookingStatus
-     * - SessionType
-     */
     public enum OperationType
     {
         Add,
@@ -24,66 +12,15 @@ namespace CalculatorDemo
         Divide
     }
 
-    /*
-     * ============================
-     * RECORD: Data / Request
-     * ============================
-     * 
-     * This record represents INPUT DATA.
-     * It does NOT calculate.
-     * It does NOT validate.
-     * It simply describes a request.
-     * 
-     * Booking system mapping:
-     * - BookingRequest
-     * - CreateBookingCommand
-     */
     public record CalculationRequest(
         int A,
         int B,
         OperationType Operation
     );
 
-    /*
-     * ============================
-     * CLASS: Domain Behaviour
-     * ============================
-     * 
-     * This class owns:
-     * - Business logic
-     * - Rules
-     * - State (history)
-     * 
-     * Booking system mapping:
-     * - BookingService
-     * - BookingRulesEngine
-     */
     public class Calculator
     {
-        /*
-         * INTERNAL STATE
-         * 
-         * This list stores ALL past requests.
-         * Only this class is allowed to modify it.
-         */
         private readonly List<CalculationRequest> _history = new();
-
-        /*
-         * READ-ONLY ACCESS TO STATE
-         * 
-         * External code can:
-         * - Read history
-         * - Iterate over it
-         * 
-         * External code CANNOT:
-         * - Add
-         * - Remove
-         * - Clear
-         * 
-         * Booking system mapping:
-         * - UI can view bookings
-         * - Only booking logic can create them
-         */
         public IReadOnlyList<CalculationRequest> History
         {
             get { return _history; }
@@ -92,12 +29,6 @@ namespace CalculatorDemo
         public string Name { get; }
         public int LastResult { get; private set; }
 
-        /*
-         * CONSTRUCTOR
-         * 
-         * Objects must never be invalid.
-         * Constructor enforces this rule.
-         */
         public Calculator(string name)
         {
             if (string.IsNullOrWhiteSpace(name))
@@ -106,17 +37,6 @@ namespace CalculatorDemo
             Name = name;
         }
 
-        /*
-         * ============================
-         * CORE BEHAVIOUR
-         * ============================
-         * 
-         * This method:
-         * 1. Validates input
-         * 2. Applies business rules
-         * 3. Performs calculation
-         * 4. Stores request in history
-         */
         public int Calculate(int a, int b, OperationType operation)
         {
             // GUARD CLAUSE: Fail fast

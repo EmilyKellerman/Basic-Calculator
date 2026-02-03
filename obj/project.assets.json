@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Training Center 1\\Emily\\Basic Calculator\\Basic-Calculator\\Basic-Calculator.csproj",
-      "projectName": "Basic-Calculator",
-      "projectPath": "C:\\Users\\Training Center 1\\Emily\\Basic Calculator\\Basic-Calculator\\Basic-Calculator.csproj",
+      "projectUniqueName": "C:\\Users\\Training Center 1\\Emily\\Basic Calculator\\Basic-Calculator\\CalculatorDomainDemo.csproj",
+      "projectName": "CalculatorDomainDemo",
+      "projectPath": "C:\\Users\\Training Center 1\\Emily\\Basic Calculator\\Basic-Calculator\\CalculatorDomainDemo.csproj",
       "packagesPath": "C:\\Users\\Training Center 1\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Training Center 1\\Emily\\Basic Calculator\\Basic-Calculator\\obj\\",
       "projectStyle": "PackageReference",

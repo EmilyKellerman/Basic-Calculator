@@ -34,3 +34,4 @@ C:\Users\Training Center 1\Emily\Basic Calculator\Basic-Calculator\API\obj\Debug
 C:\Users\Training Center 1\Emily\Basic Calculator\Basic-Calculator\API\obj\Debug\net8.0\API.pdb
 C:\Users\Training Center 1\Emily\Basic Calculator\Basic-Calculator\API\obj\Debug\net8.0\API.genruntimeconfig.cache
 C:\Users\Training Center 1\Emily\Basic Calculator\Basic-Calculator\API\obj\Debug\net8.0\ref\API.dll
+C:\Users\Training Center 1\Emily\Basic Calculator\Basic-Calculator\API\bin\Debug\net8.0\Data\calculations.json

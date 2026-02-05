@@ -14,6 +14,8 @@ builder.Services.AddSingleton<CalculatorService>();
 
 var app = builder.Build();
 
+app.UseMiddleware<ExceptionHandlingMiddleware>();
+
 app.MapControllers();//calling the controllers that will be used eventually
 
 // Configure the HTTP request pipeline.

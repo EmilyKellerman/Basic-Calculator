@@ -26,17 +26,9 @@ namespace API.controllers
         [HttpPost]
         public async Task<IActionResult> Calculate([FromBody]CreateCalculationDto dto)
         {
-            if(!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-            else
-            {
-                CalculationRequest request = new CalculationRequest(dto.left, dto.right, dto.operand);
-                var result = await _calculator.CalculateAsync(request);
-                return Ok(request);
-            }
-            
+                    CalculationRequest request = new CalculationRequest(dto.left, dto.right, dto.operand);
+                    var result = await _calculator.CalculateAsync(request);
+                    return Ok(request);
         }
 
     }

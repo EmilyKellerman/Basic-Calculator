@@ -1,9 +1,15 @@
 using Basic_Calculator.Persistence;
 using Basic_Calculator.Logic;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Sqlite;
+using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlite("Data source=Calculator.db")); //needs to be the same name as the database we're gonna use
+builder.Services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
+
 builder.Services.AddControllers(); //tells ASP.NET that this application will use controllers as entry points
 builder.Services.AddSwaggerGen();
 

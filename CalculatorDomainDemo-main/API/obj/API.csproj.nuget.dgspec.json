@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Skye\\Desktop\\CalculatorDomainDemo\\API\\API.csproj": {}
+    "C:\\Users\\Training Center 1\\Emily\\Basic Calculator\\Basic-Calculator\\CalculatorDomainDemo-main\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Skye\\Desktop\\CalculatorDomainDemo\\API\\API.csproj": {
+    "C:\\Users\\Training Center 1\\Emily\\Basic Calculator\\Basic-Calculator\\CalculatorDomainDemo-main\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Skye\\Desktop\\CalculatorDomainDemo\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\Training Center 1\\Emily\\Basic Calculator\\Basic-Calculator\\CalculatorDomainDemo-main\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\Skye\\Desktop\\CalculatorDomainDemo\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\Skye\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Skye\\Desktop\\CalculatorDomainDemo\\API\\obj\\",
+        "projectPath": "C:\\Users\\Training Center 1\\Emily\\Basic Calculator\\Basic-Calculator\\CalculatorDomainDemo-main\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\Training Center 1\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Training Center 1\\Emily\\Basic Calculator\\Basic-Calculator\\CalculatorDomainDemo-main\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Skye\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Training Center 1\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -26,8 +26,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Skye\\Desktop\\CalculatorDomainDemo\\CalculatorDomainDemo\\CalculatorDomainDemo.csproj": {
-                "projectPath": "C:\\Users\\Skye\\Desktop\\CalculatorDomainDemo\\CalculatorDomainDemo\\CalculatorDomainDemo.csproj"
+              "C:\\Users\\Training Center 1\\Emily\\Basic Calculator\\Basic-Calculator\\CalculatorDomainDemo-main\\CalculatorDomainDemo\\CalculatorDomainDemo.csproj": {
+                "projectPath": "C:\\Users\\Training Center 1\\Emily\\Basic Calculator\\Basic-Calculator\\CalculatorDomainDemo-main\\CalculatorDomainDemo\\CalculatorDomainDemo.csproj"
               }
             }
           }
@@ -103,17 +103,17 @@
         }
       }
     },
-    "C:\\Users\\Skye\\Desktop\\CalculatorDomainDemo\\CalculatorDomainDemo\\CalculatorDomainDemo.csproj": {
+    "C:\\Users\\Training Center 1\\Emily\\Basic Calculator\\Basic-Calculator\\CalculatorDomainDemo-main\\CalculatorDomainDemo\\CalculatorDomainDemo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Skye\\Desktop\\CalculatorDomainDemo\\CalculatorDomainDemo\\CalculatorDomainDemo.csproj",
+        "projectUniqueName": "C:\\Users\\Training Center 1\\Emily\\Basic Calculator\\Basic-Calculator\\CalculatorDomainDemo-main\\CalculatorDomainDemo\\CalculatorDomainDemo.csproj",
         "projectName": "CalculatorDomainDemo",
-        "projectPath": "C:\\Users\\Skye\\Desktop\\CalculatorDomainDemo\\CalculatorDomainDemo\\CalculatorDomainDemo.csproj",
-        "packagesPath": "C:\\Users\\Skye\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Skye\\Desktop\\CalculatorDomainDemo\\CalculatorDomainDemo\\obj\\",
+        "projectPath": "C:\\Users\\Training Center 1\\Emily\\Basic Calculator\\Basic-Calculator\\CalculatorDomainDemo-main\\CalculatorDomainDemo\\CalculatorDomainDemo.csproj",
+        "packagesPath": "C:\\Users\\Training Center 1\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Training Center 1\\Emily\\Basic Calculator\\Basic-Calculator\\CalculatorDomainDemo-main\\CalculatorDomainDemo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Skye\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Training Center 1\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"

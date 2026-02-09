@@ -3,6 +3,7 @@ using CalculatorDomain.Logic;
 using CalculatorDomain.Persistence;
 using CalculatorDomainDemo.Persistence;
 using Microsoft.EntityFrameworkCore;
+using API.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.Options;
@@ -22,7 +23,7 @@ builder.Services.AddSingleton<ICalculationStore>(
 
 // Add services to the container
 builder.Services.AddDbContext<CalculatorDbContext>(options =>
-options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
+options.UseSqlite(builder.Configuration.GetConnectionString("CalculatorDb")));
 
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
 .AddEntityFrameworkStores<CalculatorDbContext>()

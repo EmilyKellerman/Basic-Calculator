@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Skye\\Desktop\\CalculatorDomainDemo\\CalculatorDomainDemo.csproj": {}
+    "C:\\Users\\Training Center 1\\Emily\\Basic Calculator\\Basic-Calculator\\CalculatorDomainDemo-main\\CalculatorDomainDemo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Skye\\Desktop\\CalculatorDomainDemo\\CalculatorDomainDemo.csproj": {
+    "C:\\Users\\Training Center 1\\Emily\\Basic Calculator\\Basic-Calculator\\CalculatorDomainDemo-main\\CalculatorDomainDemo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Skye\\Desktop\\CalculatorDomainDemo\\CalculatorDomainDemo.csproj",
+        "projectUniqueName": "C:\\Users\\Training Center 1\\Emily\\Basic Calculator\\Basic-Calculator\\CalculatorDomainDemo-main\\CalculatorDomainDemo.csproj",
         "projectName": "CalculatorDomainDemo",
-        "projectPath": "C:\\Users\\Skye\\Desktop\\CalculatorDomainDemo\\CalculatorDomainDemo.csproj",
-        "packagesPath": "C:\\Users\\Skye\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Skye\\Desktop\\CalculatorDomainDemo\\obj\\",
+        "projectPath": "C:\\Users\\Training Center 1\\Emily\\Basic Calculator\\Basic-Calculator\\CalculatorDomainDemo-main\\CalculatorDomainDemo.csproj",
+        "packagesPath": "C:\\Users\\Training Center 1\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Training Center 1\\Emily\\Basic Calculator\\Basic-Calculator\\CalculatorDomainDemo-main\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Skye\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Training Center 1\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -42,6 +42,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

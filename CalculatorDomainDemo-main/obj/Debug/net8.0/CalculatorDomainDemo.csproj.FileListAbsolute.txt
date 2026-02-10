@@ -14,3 +14,13 @@ C:\Users\Skye\Desktop\CalculatorDomainDemo\obj\Debug\net8.0\CalculatorDomainDemo
 C:\Users\Skye\Desktop\CalculatorDomainDemo\obj\Debug\net8.0\CalculatorDomainDemo.genruntimeconfig.cache
 C:\Users\Skye\Desktop\CalculatorDomainDemo\obj\Debug\net8.0\ref\CalculatorDomainDemo.dll
 C:\Users\Skye\Desktop\CalculatorDomainDemo\obj\Debug\net8.0\CalculatorDomainDemo.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Training Center 1\Emily\Basic Calculator\Basic-Calculator\CalculatorDomainDemo-main\obj\Debug\net8.0\CalculatorDomainDemo.csproj.AssemblyReference.cache
+C:\Users\Training Center 1\Emily\Basic Calculator\Basic-Calculator\CalculatorDomainDemo-main\obj\Debug\net8.0\CalculatorDomainDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Training Center 1\Emily\Basic Calculator\Basic-Calculator\CalculatorDomainDemo-main\obj\Debug\net8.0\CalculatorDomainDemo.AssemblyInfoInputs.cache
+C:\Users\Training Center 1\Emily\Basic Calculator\Basic-Calculator\CalculatorDomainDemo-main\obj\Debug\net8.0\CalculatorDomainDemo.AssemblyInfo.cs
+C:\Users\Training Center 1\Emily\Basic Calculator\Basic-Calculator\CalculatorDomainDemo-main\obj\Debug\net8.0\CalculatorDomainDemo.csproj.CoreCompileInputs.cache
+C:\Users\Training Center 1\Emily\Basic Calculator\Basic-Calculator\CalculatorDomainDemo-main\obj\Debug\net8.0\CalculatorDomainDemo.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Training Center 1\Emily\Basic Calculator\Basic-Calculator\CalculatorDomainDemo-main\obj\Debug\net8.0\CalculatorDomainDemo.sourcelink.json
+C:\Users\Training Center 1\Emily\Basic Calculator\Basic-Calculator\CalculatorDomainDemo-main\obj\Debug\net8.0\CalculatorDomainDemo.dll
+C:\Users\Training Center 1\Emily\Basic Calculator\Basic-Calculator\CalculatorDomainDemo-main\obj\Debug\net8.0\refint\CalculatorDomainDemo.dll
+C:\Users\Training Center 1\Emily\Basic Calculator\Basic-Calculator\CalculatorDomainDemo-main\obj\Debug\net8.0\CalculatorDomainDemo.pdb
